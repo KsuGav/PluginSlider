@@ -1,0 +1,216 @@
+header,
+footer,
+article,
+aside,
+section,
+hgroup,
+nav {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgrey;
+    font-size: 14pt;
+    font-weight: normal;
+    font-family: monospace;
+}
+
+.main {
+    background-color: white;
+    width: 1015px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
+/*----------header----------*/
+
+.logo {
+    display: block;
+    margin: 20px 0 20px 56px;
+    font-weight: normal;
+}
+
+
+/*------------Main Menu--------------*/
+
+.mainMenu ul {
+    background-color: rgb(79, 78, 78);
+    margin: 0 50px;
+}
+
+.mainMenu ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 30px;
+}
+
+.mainMenu ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    text-shadow: 0 2px 2px black;
+    font-weight: normal;
+    font-size: 12pt;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+
+.mainMenu a:nth-child(2),
+.mainMenu a:hover {
+    outline: 1px solid white;
+    background-color: rgb(53, 53, 53);
+}
+
+
+/*------------content---------------*/
+
+.content {
+    overflow: hidden;
+    margin: 50px 0 0 0;
+}
+
+.content::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*--------------sideBar---------------*/
+
+.sideBarWrapper {
+    float: left;
+    width: 240px;
+    margin: 0 50px;
+}
+
+.sideBar ul li {
+    list-style: none;
+}
+
+.sideBar ul li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    text-decoration: none;
+    font-size: 12pt;
+    color: rgb(200, 200, 200);
+    transition: 0.5s;
+    border-bottom: none;
+}
+
+.sideBar ul li a:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.sideBar a:hover {
+    color: black;
+    background-color: lightgray;
+    padding: 10px 0 10px 20px;
+}
+
+
+/*----------------Image&&Text-------------------*/
+
+.imgWrapper {
+    width: 625px;
+    float: left;
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 20px;
+}
+
+.imgWrapper+article {
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+    float: right;
+    width: 625px;
+}
+
+
+/*-----------footer--------------*/
+
+footer {
+    background-color: darkgray;
+    margin: 50px;
+    text-align: right;
+    line-height: 45px;
+    overflow: hidden;
+    clear: both;
+}
+
+.footerMenu {
+    float: left;
+}
+
+.footerMenu ul {
+    margin: 0 30px;
+}
+
+.footerMenu ul li {
+    list-style: none;
+    float: left;
+    margin: 0 30px;
+}
+
+.footerMenu ul li a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    color: darkslategray;
+    font-weight: normal;
+    font-size: 12pt;
+    transition: 0.5s;
+}
+
+.footerMenu ul li a:hover {
+    text-decoration: underline;
+}
+
+.right {
+    float: right;
+    margin-right: 50px;
+    font-size: 13px;
+}
+.item{
+    display: none;
+}
+.activeSlider{
+    display: inline ;
+}
+.button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font: 12pt arial,tahoma,sans-serif;
+    text-align: center;
+    border-radius:50px;
+    opacity: 0.5;
+}
+#left{
+    top: 95%;
+    left: 37%;
+}
+#right {
+    top: 97%;
+    left: 81%;
+}
+#radio_pull{
+    position: relative;
+    left: 59%;
+    top: -23px;
+    opacity: 0.8;
+}
+.radiobtn{
+    margin: 4px;
+}
